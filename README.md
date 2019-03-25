@@ -1,2 +1,2 @@
-# tmcsyntaxtEB_TestLB
+# tmcsyntaxEB_TestLB
 Late binding Test Bench for tmcsyntaxEB.dll
