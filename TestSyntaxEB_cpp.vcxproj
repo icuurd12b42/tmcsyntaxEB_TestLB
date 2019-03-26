@@ -72,15 +72,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)Bin\x86\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)Bin\x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Bin\x86\Release\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Bin\x64\Release\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,7 +104,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(ProjectDir)Bin\x86\Debug\$(TargetName)x86$(TargetExt)</OutputFile>
+      <OutputFile>$(ProjectDir)Bin\x86\Debug\$(TargetName)$(TargetExt)</OutputFile>
       <ManifestFile>$(ProjectDir)man\x86\Debug\$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
       <ProfileGuidedDatabase>$(ProjectDir)pgd\x86\Debug\$(TargetName).pgd</ProfileGuidedDatabase>
       <ProgramDatabaseFile>$(ProjectDir)pdb\x86\Debug\$(TargetName).pdb</ProgramDatabaseFile>
@@ -128,7 +132,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(ProjectDir)Bin\x64\Debug\$(TargetName)x64$(TargetExt)</OutputFile>
+      <OutputFile>$(ProjectDir)Bin\x64\Debug\$(TargetName)$(TargetExt)</OutputFile>
       <ManifestFile>\x64\Debug\$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
       <ProfileGuidedDatabase>$(ProjectDir)pgd\x64\Debug\$(TargetName).pgd</ProfileGuidedDatabase>
       <ProgramDatabaseFile>$(ProjectDir)pdb\x64\Debug\$(TargetName).pdb</ProgramDatabaseFile>
@@ -163,7 +167,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(ProjectDir)Bin\x86\Release\$(TargetName)x86$(TargetExt)</OutputFile>
+      <OutputFile>$(ProjectDir)Bin\x86\Release\$(TargetName)$(TargetExt)</OutputFile>
       <ManifestFile>$(ProjectDir)man\x86\Release\$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
       <ProfileGuidedDatabase>$(ProjectDir)pgd\x86\Release\$(TargetName).pgd</ProfileGuidedDatabase>
       <ProgramDatabaseFile>$(ProjectDir)pdb\x86\Release\$(TargetName).pdb</ProgramDatabaseFile>
@@ -195,7 +199,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(ProjectDir)Bin\x64\Release\$(TargetName)x64$(TargetExt)</OutputFile>
+      <OutputFile>$(ProjectDir)Bin\x64\Release\$(TargetName)$(TargetExt)</OutputFile>
       <ManifestFile>$(ProjectDir)man\x64\Release\$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
       <ProfileGuidedDatabase>$(ProjectDir)pgd\x64\Release$$(TargetName).pgd</ProfileGuidedDatabase>
       <ProgramDatabaseFile>$(ProjectDir)pdb\x64\Debug\$(TargetName).pdb</ProgramDatabaseFile>
