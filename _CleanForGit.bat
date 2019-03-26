@@ -4,17 +4,13 @@ mkdir tmpbin\x64
 mkdir tmpbin\x64\Release
 mkdir tmpbin\x64\Debug
 copy Bin\x64\Release\*.exe tmpbin\x64\Release
-copy Bin\x64\Release\*.dll tmpbin\x64\Release
 copy Bin\x64\Debug\*.exe tmpbin\x64\Debug
-copy Bin\x64\Debug\*.dll tmpbin\x64\Debug
 
 mkdir tmpbin\x86
 mkdir tmpbin\x86\Release
 mkdir tmpbin\x86\Debug
 copy Bin\x86\Release\*.exe tmpbin\x86\Release
-copy Bin\x86\Release\*.dll tmpbin\x86\Release
 copy Bin\x86\Debug\*.exe tmpbin\x86\Debug
-copy Bin\x86\Debug\*.dll tmpbin\x86\Debug
 
 
 mkdir tmplib
